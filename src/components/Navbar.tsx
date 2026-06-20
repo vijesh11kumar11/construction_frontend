@@ -59,7 +59,7 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-3">
             <a
               href="#contact"
-              className="shine relative inline-flex items-center gap-2 rounded-full bg-charcoal px-5 py-2.5 text-sm font-medium text-ivory hover:bg-graphite transition-colors"
+              className="shine relative inline-flex items-center gap-2 rounded-full bg-charcoal px-5 py-2.5 text-sm font-medium text-ivory hover:bg-graphite hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
             >
               Request a Quote
               <span className="h-1.5 w-1.5 rounded-full bg-gold" />
@@ -68,7 +68,7 @@ export default function Navbar() {
 
           <button
             aria-label="Toggle menu"
-            className="lg:hidden inline-flex h-10 w-10 items-center justify-center rounded-xl border border-gold/30 text-charcoal"
+            className="lg:hidden inline-flex h-10 w-10 items-center justify-center rounded-xl border border-gold/30 text-charcoal hover:bg-gold/10 hover:border-gold/60 active:scale-95 transition-all duration-150"
             onClick={() => setOpen((v) => !v)}
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -78,10 +78,10 @@ export default function Navbar() {
         <AnimatePresence>
           {open && (
             <motion.div
-              initial={{ opacity: 0, y: -8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -8 }}
-              transition={{ duration: 0.25 }}
+              initial={{ opacity: 0, y: -12, scale: 0.97 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: -8, scale: 0.97 }}
+              transition={{ duration: 0.22, ease: [0.25, 1, 0.5, 1] }}
               className="lg:hidden mt-2 glass rounded-2xl p-4 shadow-xl"
             >
               <nav className="flex flex-col">

@@ -117,7 +117,7 @@ export default function DiyaDev() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="tel:+919087353637"
-              className="inline-flex items-center gap-2.5 rounded-full px-7 py-4 text-sm font-semibold text-white transition-opacity hover:opacity-90 shadow-lg"
+              className="inline-flex items-center gap-2.5 rounded-full px-7 py-4 text-sm font-semibold text-white hover:opacity-90 hover:-translate-y-0.5 hover:shadow-xl transition-all duration-200 shadow-lg"
               style={{ backgroundColor: "#f5a623" }}
             >
               Call +91 90873 53637
@@ -126,7 +126,7 @@ export default function DiyaDev() {
               href="https://wa.me/919087353637"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 rounded-full px-7 py-4 text-sm font-semibold text-white transition-opacity hover:opacity-90 shadow-lg"
+              className="inline-flex items-center gap-2.5 rounded-full px-7 py-4 text-sm font-semibold text-white hover:opacity-90 hover:-translate-y-0.5 hover:shadow-xl transition-all duration-200 shadow-lg"
               style={{ backgroundColor: "#1a4b8c" }}
             >
               Send an Enquiry on WhatsApp

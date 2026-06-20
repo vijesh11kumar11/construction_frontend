@@ -8,7 +8,7 @@ function Counter({ value, suffix }: { value: number; suffix: string }) {
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
   const mv = useMotionValue(0);
-  const spring = useSpring(mv, { duration: 2000, bounce: 0 });
+  const spring = useSpring(mv, { duration: 2200, bounce: 0.05 });
 
   useEffect(() => {
     if (inView) mv.set(value);
@@ -54,8 +54,8 @@ export default function Stats() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.08 }}
-              className="text-center px-2"
+              transition={{ duration: 0.55, delay: i * 0.1, ease: [0.25, 1, 0.5, 1] }}
+              className="text-center px-2 hover:-translate-y-1 transition-transform duration-300"
             >
               <div className="text-3xl mb-2">{s.icon}</div>
               <Counter value={s.value} suffix={s.suffix} />

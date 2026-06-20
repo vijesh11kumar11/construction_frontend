@@ -79,16 +79,16 @@ export default function Hero() {
             >
               <a
                 href="#projects"
-                className="shine group inline-flex items-center gap-2 rounded-full bg-charcoal px-7 py-4 text-sm sm:text-base font-medium text-ivory hover:bg-graphite transition-colors shadow-xl shadow-charcoal/20"
+                className="shine group inline-flex items-center gap-2 rounded-full bg-charcoal px-7 py-4 text-sm sm:text-base font-medium text-ivory hover:bg-graphite hover:-translate-y-0.5 hover:shadow-2xl transition-all duration-200 shadow-xl shadow-charcoal/20"
               >
                 Explore Our Work
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1.5" />
               </a>
               <a
                 href="#equipment"
-                className="group inline-flex items-center gap-2 rounded-full border border-charcoal/15 bg-white/60 backdrop-blur px-7 py-4 text-sm sm:text-base font-medium text-charcoal hover:border-gold transition-all"
+                className="group inline-flex items-center gap-2 rounded-full border border-charcoal/15 bg-white/60 backdrop-blur px-7 py-4 text-sm sm:text-base font-medium text-charcoal hover:border-gold hover:bg-white hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200"
               >
-                <PlayCircle className="h-5 w-5 text-gold-deep" />
+                <PlayCircle className="h-5 w-5 text-gold-deep transition-transform duration-200 group-hover:scale-110" />
                 Browse Equipment Fleet
               </a>
             </motion.div>

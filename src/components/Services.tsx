@@ -218,10 +218,10 @@ export default function Services() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-40px" }}
                     transition={{ duration: 0.4, delay: si * 0.06 }}
-                    className="group flex flex-col items-center text-center p-6 sm:p-8 bg-white rounded-2xl border border-green-100 hover:border-[#4a7c2a] hover:shadow-xl transition-all duration-300 cursor-default"
+                    className="group flex flex-col items-center text-center p-6 sm:p-8 bg-white rounded-2xl border border-green-100 hover:border-[#4a7c2a] hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 ease-out cursor-default"
                   >
                     <div
-                      className="transition-colors duration-300 group-hover:scale-110 transform"
+                      className="transition-transform duration-300 ease-out group-hover:scale-110"
                       style={{ color: "#2d5a16" }}
                     >
                       <service.Icon />
